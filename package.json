@@ -4,11 +4,14 @@
   "description": "Lerna monorepo for all Sauce runners",
   "main": "index.js",
   "scripts": {
-    "test": "npm test"
+    "test": "jest --env node",
+    "lint": "eslint packages/*/src/ packages/*/tests/"
   },
   "author": "Dan Graham",
   "license": "ISC",
   "devDependencies": {
+    "eslint-config-appium": "^4.6.1",
+    "eslint-plugin-jest": "^24.1.3",
     "lerna": "^3.22.1"
   }
 }
