@@ -6,8 +6,12 @@ name: Node.js CI
 on:
   push:
     branches: [ master ]
+    paths:
+      - packages/sauce-cypress-runner/**/*
   pull_request:
     branches: [ master ]
+    paths:
+      - packages/sauce-cypress-runner/**/*
 
 jobs:
   build:
