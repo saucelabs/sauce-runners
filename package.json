@@ -1,0 +1,14 @@
+{
+  "name": "sauce-runners",
+  "version": "1.0.0",
+  "description": "Lerna monorepo for all Sauce runners",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "author": "Dan Graham",
+  "license": "ISC",
+  "devDependencies": {
+    "lerna": "^3.22.1"
+  }
+}
