@@ -20,6 +20,7 @@ jobs:
       -
         uses: docker/build-push-action@v1
         with:
+          file: packages/sauce-cypress-runner/Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: saucelabs/stt-cypress-mocha-node
