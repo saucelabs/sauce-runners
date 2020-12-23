@@ -35,7 +35,7 @@ jobs:
           path: saucectl
 
       # Build saucectl
-      - run: pushd saucectl && make build && popd
+      - run: pushd packages/sauce-cypress-runner/saucectl && make build && popd
         name: Build Saucectl and run E2E tests
 
       # Run e2e tests
