@@ -7,13 +7,12 @@ on:
     paths:
       - packages/sauce-cypress-runner/**/*
 
-defaults:
-  run:
-    working-directory: packages/sauce-cypress-runner
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/sauce-cypress-runner
     steps:
       -
         name: Checkout
@@ -47,6 +46,9 @@ jobs:
         #name: Build Saucectl and run E2E tests
   build-ubuntu-bundle-and-test:
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/sauce-cypress-runner
     steps:
       -
         name: Checkout
@@ -59,6 +61,9 @@ jobs:
         run: ls -R bundle/
   build-windows-bundle-and-test:
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: packages/sauce-cypress-runner
     steps:
       -
         name: Checkout
