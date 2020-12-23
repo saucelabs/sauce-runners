@@ -7,6 +7,10 @@ on:
     paths:
       - packages/sauce-cypress-runner
 
+defaults:
+  run:
+    working-directory: packages/sauce-cypress-runner
+
 jobs:
   build:
     runs-on: ubuntu-latest
