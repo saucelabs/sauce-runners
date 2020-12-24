@@ -1,0 +1,23 @@
+{
+    "cypress": {
+        "configFile": "cypress.json"
+    },
+    "suites": [
+        {
+            "name": "default",
+            "browser": "chrome",
+            "browserVersion": "",
+            "config": {
+                "testFiles": [
+                    "**/*.*"
+                ]
+            }
+        }
+    ],
+    "npm": {
+        "packages": { 
+            "left-pad": "1.3.0",
+            "jquery": 2
+        }
+    }
+}
